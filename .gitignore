@@ -1,0 +1,45 @@
+# Env files
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# Dependencies
+node_modules/
+vendor/
+
+# Builds
+dist/
+build/
+*.apk
+*.ipa
+*.exe
+
+# Go
+apps/backend/bin/
+apps/backend/tmp/
+*.test
+*.out
+
+# Expo
+apps/mobile/.expo/
+apps/mobile/web-build/
+apps/mobile/ios/
+apps/mobile/android/
+
+# EAS
+eas.json.bak
+
+# Editor
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# Logs
+*.log
+npm-debug.log*
+
+# Supabase
+supabase/.branches/
+supabase/.temp/

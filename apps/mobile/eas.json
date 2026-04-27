@@ -1,0 +1,42 @@
+{
+  "cli": {
+    "version": ">= 12.0.0",
+    "appVersionSource": "local"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal",
+      "android": { "buildType": "apk" },
+      "env": {
+        "EXPO_PUBLIC_SUPABASE_URL": "https://lhvwubjppakhurwnyvfh.supabase.co",
+        "EXPO_PUBLIC_SUPABASE_ANON_KEY": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imxodnd1YmpwcGFraHVyd255dmZoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzcyMTU5OTMsImV4cCI6MjA5Mjc5MTk5M30.yMWguWRuppmwW7hWetvGg8of477564cHrnIuWfltwWg",
+        "EXPO_PUBLIC_API_URL": "https://rumbea-api.fly.dev",
+        "EXPO_PUBLIC_USE_MOCKS": "false"
+      }
+    },
+    "preview": {
+      "distribution": "internal",
+      "android": { "buildType": "apk" },
+      "channel": "preview",
+      "env": {
+        "EXPO_PUBLIC_SUPABASE_URL": "https://lhvwubjppakhurwnyvfh.supabase.co",
+        "EXPO_PUBLIC_SUPABASE_ANON_KEY": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imxodnd1YmpwcGFraHVyd255dmZoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzcyMTU5OTMsImV4cCI6MjA5Mjc5MTk5M30.yMWguWRuppmwW7hWetvGg8of477564cHrnIuWfltwWg",
+        "EXPO_PUBLIC_API_URL": "https://rumbea-api.fly.dev",
+        "EXPO_PUBLIC_USE_MOCKS": "false"
+      }
+    },
+    "production": {
+      "autoIncrement": true,
+      "env": {
+        "EXPO_PUBLIC_SUPABASE_URL": "https://lhvwubjppakhurwnyvfh.supabase.co",
+        "EXPO_PUBLIC_SUPABASE_ANON_KEY": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imxodnd1YmpwcGFraHVyd255dmZoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzcyMTU5OTMsImV4cCI6MjA5Mjc5MTk5M30.yMWguWRuppmwW7hWetvGg8of477564cHrnIuWfltwWg",
+        "EXPO_PUBLIC_API_URL": "https://rumbea-api.fly.dev",
+        "EXPO_PUBLIC_USE_MOCKS": "false"
+      }
+    }
+  },
+  "submit": {
+    "production": {}
+  }
+}

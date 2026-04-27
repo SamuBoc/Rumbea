@@ -1,0 +1,56 @@
+{
+  "expo": {
+    "name": "Rumbea",
+    "slug": "rumbea",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "scheme": "rumbea",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.rumbea.app"
+    },
+    "android": {
+      "package": "com.rumbea.app",
+      "adaptiveIcon": {
+        "backgroundColor": "#0B0B1A"
+      },
+      "permissions": [
+        "android.permission.RECORD_AUDIO",
+        "android.permission.RECORD_AUDIO"
+      ]
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Rumbea necesita acceso a tus fotos para subir la imagen del establecimiento."
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "14006ad3-ad26-4064-b3d0-4692892e23e0"
+      }
+    },
+    "owner": "sam2032",
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/14006ad3-ad26-4064-b3d0-4692892e23e0"
+    }
+  }
+}

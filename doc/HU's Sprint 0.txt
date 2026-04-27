@@ -1,0 +1,135 @@
+HU's para este sprint 0
+
+
+- Modelo de base de datos 
+- HU-08 Registro de establecimiento: 
+Descripción
+
+COMO dueño de un bar o discoteca, 
+
+QUIERO registrar mi negocio con nombre, dirección, categoría, aforo máximo y foto, 
+
+PARA que los usuarios puedan encontrar mi lugar y ver información actualizada.
+Criterios de aceptación.
+
+    Formulario completo publica perfil del lugar.
+
+    Lugar duplicado muestra alerta de advertencia.
+
+    Sin foto usa imagen predeterminada.
+
+    Aforo vacío indica campo obligatorio.
+
+    Registro exitoso habilita panel de administración.
+
+- HU-07: Registro de usuario cliente
+COMO persona interesada en salir de noche, 
+
+QUIERO registrarme con nombre, correo y contraseña en la plataforma, 
+
+PARA acceder a funcionalidades personalizadas como favoritos y reseñas
+Criterios de aceptación.
+
+    Datos válidos crean cuenta exitosamente.
+
+    Correo duplicado muestra mensaje de error.
+
+    Contraseñas distintas muestran error de validación.
+
+    Campos vacíos impiden envío del formulario.
+
+    Registro exitoso accede al perfil vacío.
+
+-HU-02: Filtrar lugares por características
+
+COMO usuario cliente, 
+
+QUIERO filtrar los resultados por género musical, valor del cover, temática, horarios y disponibilidad,
+
+PARA encontrar el lugar que mejor se ajuste a mis preferencias antes de salir.
+Criterios de aceptación.
+
+Escenario: filtrar lugares por genero musical
+
+GIVEN el usuario quiera ir a un lugar que maneje su estilo de musica
+
+WHEN escoge el filtro con su genero musical de preferencia
+
+THEN el sistema le muestra los establecimiestos con esas especificaciones
+
+ 
+
+Escenario: filtrar por varias condiciones
+
+GIVEN que el usuario quiere hacer filtro de lugares segun varias caracteristicas
+
+WHEN escoja todos los filtros
+
+THEN el sistema le muestra los establecimiestos con esas especificaciones
+
+ 
+
+Escenario: prevencion de errores al quitar filtros
+
+GIVEN que el usuario se equivoco al poner uno o varios filtros y los quiere quitar
+
+WHEN quite los filtros poco a poco
+
+THEN el sistema tiene que ir actualizando la lista de lugares cada vez que se quite o ponga un filtro nuevo
+
+- HU-09: Marcar establecimiento como favorito
+
+COMO usuario cliente autenticado, 
+
+QUIERO marcar o desmarcar un establecimiento como favorito con un botón visible,
+
+PARA guardarlo y acceder rápidamente a él sin tener que buscarlo de nuevo.
+Criterios de aceptación.
+
+    Presionar agrega lugar a favoritos.
+
+    Presionar elimina lugar de favoritos.
+
+    Sin sesión redirige a iniciar sesión.
+
+    Favorito marcado aparece en "Mis Favoritos".
+
+    Lugar cerrado aparece como "No disponible"
+
+- HU-2.5: Publicar enlaces de interés en el perfil
+
+COMO dueño, 
+
+QUIERO agregar enlaces etiquetados (redes sociales, reservas) en mi perfil, 
+
+PARA que los usuarios accedan directamente a mis canales digitales sin tener que buscarlos por separado.
+Criterios de aceptación.
+
+    Enlace guardado aparece como botón clickeable.
+
+    URL inválida muestra error de validación.
+
+    Todos los enlaces visibles en perfil público.
+
+    Sin enlaces no muestra esa sección.
+
+    Enlace duplicado muestra advertencia al establecimiento
+
+- HU-10: Consultar historial de establecimientos favoritos
+
+COMO usuario cliente autenticado, 
+
+QUIERO ver la lista de todos los establecimientos que marqué como favoritos, 
+
+PARA planear mi próxima salida sin tener que buscar lugares que ya conozco.
+Criterios de aceptación.
+
+    Lista muestra foto, nombre y estado.
+
+    Sin favoritos muestra mensaje con sugerencias
+
+    Eliminar desde lista actualiza inmediatamente.
+
+    Lista ordenada por más recientes guardados.
+
+    Presionar lugar abre su perfil completo.
